@@ -27,7 +27,22 @@ namespace Kibernum
             persona.CorreosElectronicos = txtCorreoElectronico.Text;
             persona.DirecionesFisicas = txtDirecciones.Text;
 
-            new PersonaBusiness().Insertar(persona);
+            try
+            {
+                new PersonaBusiness().Insertar(persona);
+                MostrarMensaje("Usuario registrado exitosamente");
+            }
+            catch (Exception ex)
+            {
+                MostrarMensaje(ex.Message);
+            }
+            
+        }
+
+        private void MostrarMensaje(string mensaje)
+        {
+            string script = "MostrarMensaje(" + mensaje + ")";
+            ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
         }
     }
 }

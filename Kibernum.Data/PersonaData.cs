@@ -1,6 +1,8 @@
 ﻿using ProyectoDTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,9 +50,12 @@ namespace Kibernum.Data
                         if (recordsAffected > 0)
                             return true;
                     }
-                    catch (SqlException)
+                    catch (SqlException ex)
                     {
+                        if (ex.Message.Contains("UniqueConstraint"))
+                            throw new Exception("No pueden registrarse dos personas con el mismo documento");
 
+                        throw;
                     }
                 }
             }
