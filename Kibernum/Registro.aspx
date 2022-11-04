@@ -69,6 +69,11 @@
                         <asp:TextBox ID="txtDirecciones" runat="server"></asp:TextBox>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col">
+                        <asp:Button ID="btnGuardar" runat="server" OnClick="btnGuardar_Click"></asp:Button>
+                    </div>
+                </div>
             </div>
         </div>
     </form>

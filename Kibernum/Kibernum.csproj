@@ -90,6 +90,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Kibernum.Business\Kibernum.Business.csproj">
+      <Project>{8dd01423-0101-4a98-bc40-e4cc00754987}</Project>
+      <Name>Kibernum.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProyectoDTO\ProyectoDTO.csproj">
       <Project>{02b45dac-3339-4037-ac6d-0dabb23adbcf}</Project>
       <Name>ProyectoDTO</Name>
