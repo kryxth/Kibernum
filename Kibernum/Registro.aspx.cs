@@ -41,8 +41,7 @@ namespace Kibernum
 
         private void MostrarMensaje(string mensaje)
         {
-            string script = "MostrarMensaje(" + mensaje + ")";
-            ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
+            Response.Write("<script>alert('" + mensaje + "');</script>");
         }
     }
 }

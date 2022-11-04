@@ -28,12 +28,12 @@ namespace Kibernum.Data
                                                ,[CorreosElectronicos]
                                                ,[DirecionesFisicas])
                                          VALUES
-                                               (@Documento, 
-                                               ,@Nombres, 
-                                               ,@Apellidos, 
-                                               ,@FechaNacimiento, 
-                                               ,@NumerosTelefonicos,
-                                               ,@CorreosElectronicos,
+                                               (@Documento 
+                                               ,@Nombres
+                                               ,@Apellidos 
+                                               ,@FechaNacimiento
+                                               ,@NumerosTelefonicos
+                                               ,@CorreosElectronicos
                                                ,@DirecionesFisicas)";
                     command.Parameters.AddWithValue("@Documento", persona.Documento);
                     command.Parameters.AddWithValue("@Nombres", persona.Nombres);
