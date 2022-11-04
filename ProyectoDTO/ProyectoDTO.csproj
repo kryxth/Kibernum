@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C2922F0-D925-46CA-8B58-280F89F63895}</ProjectGuid>
+    <ProjectGuid>{02B45DAC-3339-4037-AC6D-0DABB23ADBCF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Kibernum.Data</RootNamespace>
-    <AssemblyName>Kibernum.Data</AssemblyName>
+    <RootNamespace>ProyectoDTO</RootNamespace>
+    <AssemblyName>ProyectoDTO</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,14 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PersonaData.cs" />
+    <Compile Include="PersonaDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ProyectoDTO\ProyectoDTO.csproj">
-      <Project>{02b45dac-3339-4037-ac6d-0dabb23adbcf}</Project>
-      <Name>ProyectoDTO</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
